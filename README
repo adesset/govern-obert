@@ -1,0 +1,7 @@
+Configuracio de la base de dades MYSQL
+database name: governobert
+user: governobert
+password: governobert2019
+Han de figurar aquestes credencials dins el fitxer sites/default/settings.php o es poden canviar a conveniència de l'usuari.
+
+
