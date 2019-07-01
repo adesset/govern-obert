@@ -1,10 +1,27 @@
 Configuracio de la base de dades MYSQL
-database name: governobert
-user: governobert
-password: governobert2019
+1) Descarregar el fitxer governobert_db.zip
+2) Descomprimir-lo i obtenir el fitxer governobert_db.sql
+3) Crear la base de dades amb el nom 'governobert' (sense cometes)
+4) Crear un usuari 'governobert' i password: 'governobert2019' (sense cometes)
+5) Executar l'script anterior que carregarà les taules i registres a la base de dades.
 En instal·lar-ho a producció es recomana canviar aquestes credencials i actualitzar-les al fitxer sites/default/settings.php
 
-Instal·lació Distribució Drupal
-Al fitxer comprimit [dist_governobert.zip] hi trobareu l'estructura de fitxers de drupal que s'han de descomprimir i
-pujar per FTP al servidor web.
-Per a més informació sobre Drupal visiteu http://drupal.org.
+Instal·lació Distribució Drupal. 
+1) Descarregar de https://www.drupal.org/project/drupal/releases/7.67 i descomprimir
+2) Descarregar el fitxer comprimit [dist_governobert.zip]. Dins hi trobareu una carpeta anomenada SITES que s'ha de 
+descomprimir i copiar dins de la carpeta de drupal, de tal manera que hi hagi la segent estructura:
+- drupal-7.67/
+  - includes
+  - misc
+  - modules
+  - profiles
+  - sripts
+  - sites (*** aquesta carpeta ha de sobreescriure la existent)
+  - themes
+  ....
+pujar tota l'estructura de fitxers i carpetes per FTP al servidor web.
+3) Des del navegador web, posar l'adreça del domini on s'han pujat els fitxers anteriors.
+4) Pantalla de longin a [nomdomini]/user (cal introduir usuari admin i contrasenya governobert2019)*** recordar canviar 
+de seguida!
+5) Configurar el mòdul de Google Maps i Google Analytics amb una API Key creada per al nou domini. Compte, si no ho canvieu
+estareu utilitzant la API d'Anglès!
