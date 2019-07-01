@@ -5,5 +5,6 @@ password: governobert2019
 En instal·lar-ho a producció es recomana canviar aquestes credencials i actualitzar-les al fitxer sites/default/settings.php
 
 Instal·lació Distribució Drupal
-A la carpeta [distribucio] hi trobareu els fitxers de drupal que s'han de pujar per FTP al servidor web.
+Al fitxer comprimit [dist_governobert.zip] hi trobareu l'estructura de fitxers de drupal que s'han de descomprimir i
+pujar per FTP al servidor web.
 Per a més informació sobre Drupal visiteu http://drupal.org.
