@@ -7,21 +7,35 @@ Configuracio de la base de dades MYSQL
 En instal·lar-ho a producció es recomana canviar aquestes credencials i actualitzar-les al fitxer sites/default/settings.php
 
 Instal·lació Distribució Drupal. 
-1) Descarregar de https://www.drupal.org/project/drupal/releases/7.67 i descomprimir
-2) Descarregar el fitxer comprimit [dist_governobert.zip]. Dins hi trobareu una carpeta anomenada SITES que s'ha de 
-descomprimir i copiar dins de la carpeta de drupal, de tal manera que hi hagi la segent estructura:
+1) Descarregar el nucli de Drupal de https://www.drupal.org/project/drupal/releases/7.67 i descomprimir
+2) Descarregar els fitxers comprimits en format ZIP que comencen per governobert_sites_*.
+3) Descomprimir-los tots i copiar-los dins la carpeta anomenada SITES de la distribucio de Drupal,
+de tal manera que hi hagi la segent estructura:
 - drupal-7.67/
   - includes
   - misc
   - modules
   - profiles
   - sripts
-  - sites (*** aquesta carpeta ha de sobreescriure la existent)
+  - sites 
+    - all
+      - libraries
+      - modules
+      - themes
+      - translation
+    - default
+      - files (aquí dins hi han d'haver els fitxers resultants de descomprimir governobert_sites_default_1.zip
+      governobert_sites_default_2.zip, governobert_sites_default_3.zip i governobert_sites_default_4.zip)
+      ...
   - themes
   ....
-pujar tota l'estructura de fitxers i carpetes per FTP al servidor web.
-3) Des del navegador web, posar l'adreça del domini on s'han pujat els fitxers anteriors.
-4) Pantalla de longin a [nomdomini]/user (cal introduir usuari admin i contrasenya governobert2019)*** recordar canviar 
+4) Pujar tota l'estructura de fitxers i carpetes per FTP al servidor web.
+5) Des del navegador web, posar l'adreça del domini on s'han pujat els fitxers anteriors.
+6) Pantalla de login a [nomdomini]/user (cal introduir usuari admin i contrasenya governobert2019)*** recordar canviar 
 de seguida!
-5) Configurar el mòdul de Google Maps i Google Analytics amb una API Key creada per al nou domini. Compte, si no ho canvieu
+7) Configurar el mòdul de Google Maps i Google Analytics amb una API Key creada per al nou domini. Compte, si no ho canvieu,
 estareu utilitzant la API d'Anglès!
+
+Autora del codi: Astrid Desset
+Disseny del projecte: Carol Gomez i Michael Donaldson
+Enjoy :)
